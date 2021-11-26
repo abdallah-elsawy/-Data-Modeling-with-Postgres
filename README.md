@@ -28,8 +28,12 @@ The log files in the dataset we'll be working with are partitioned by year and m
 
 log_data/2018/11/2018-11-12-events.json
 log_data/2018/11/2018-11-13-events.json
+
 And below is an example of what the data in a log file, 2018-11-12-events.json, looks like.
+
+
 ![](Resources/log-data.png)
+
 
 If we would like to look at the JSON data within log_data files, we will need to create a pandas dataframe to read the data. Remember to first import JSON and pandas libraries.
 
@@ -86,4 +90,5 @@ Using what we've completed in `etl.ipynb` to complete `etl.py`, where we'll proc
 
 
 #### Example queries and results for song play analysis.
+
 ![](Resources/queries-example.png)
