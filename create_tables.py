@@ -30,6 +30,8 @@ def create_database():
 def drop_tables(cur, conn):
     """
     Drops each table using the queries in `drop_table_queries` list.
+    to start every new iteration or evey time we run the code.
+    so we should include this function.
     """
     for query in drop_table_queries:
         cur.execute(query)
@@ -39,6 +41,8 @@ def drop_tables(cur, conn):
 def create_tables(cur, conn):
     """
     Creates each table using the queries in `create_table_queries` list. 
+    using this function to create the tables which we build in the 
+    create_table_queries file.
     """
     for query in create_table_queries:
         cur.execute(query)
